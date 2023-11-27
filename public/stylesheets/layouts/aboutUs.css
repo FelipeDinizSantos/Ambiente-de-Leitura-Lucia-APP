@@ -1,0 +1,47 @@
+.container
+{
+    position: absolute;
+    display: flex;
+    right: 0;
+    top: 0;
+    margin: 2vw;
+}
+
+.content
+{
+    display: none;
+    flex-direction: column;
+    gap: 1em;
+    width: 18vw;
+    height: 50vh;
+    font-size: 2.5vh;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+    border: 2px solid black;
+    margin: 8vh 0 0 auto;
+}
+
+.show
+{
+    display: flex;
+}
+
+.box
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding: 1.6vh 2vh;
+    width: 5vw;
+    height: 9.2vh;
+    border-radius: 1.3vw;
+    cursor: pointer;
+}
+
+.box img
+{
+    width: 2vw;
+}

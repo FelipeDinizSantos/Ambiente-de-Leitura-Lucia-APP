@@ -1,0 +1,151 @@
+header img
+{
+    width: 21vw;
+    margin: 5vh;
+    cursor: pointer;
+}
+
+main
+{
+    display: flex;
+    flex-direction: column;
+}
+
+main p 
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 5vh;
+}
+
+main p img
+{
+    position: absolute;
+    margin-left: 1vw;
+    cursor: pointer;
+}
+
+main p input
+{
+    border-radius: 1vw;
+    width: 60vw;
+    padding: 2vh 2vw 2vh 4vw;
+}
+
+.bookList
+{
+    margin-left: 5vh;
+    margin-top: 2vh;
+    border-radius: 3vh;
+    border: 3px solid black;
+    width: 60vw;
+    height: 65vh;
+    overflow-y: auto;
+}
+
+.bookList ul li
+{
+    display: flex;
+    padding: 1vw;
+    border-bottom: 5px solid #d9d9d9;
+    border-radius: .5vh;
+    align-items: center;
+    gap: .7vw;
+}
+
+.bookList ul li img
+{
+    width: 2vh;
+    cursor: pointer;
+}
+
+.situation
+{
+    padding: .5vw;
+    border-radius: .5vw;
+}
+
+.available
+{
+    background-color: #95f88c;
+}
+
+.rented
+{
+    background-color: #fa5151;
+}
+
+.showInformationBook
+{
+    position: absolute;
+    display: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    width: 80vw;
+    height: fit-content;
+    background-color: #F6F8F5;
+    padding: 5vh;
+    border-radius: 3vh;
+    border: 3px solid black;
+    z-index: 10;
+    box-shadow: 0px 0px 6px 3px #0000002c;
+}
+
+.showInformationBook.show
+{
+    display: flex;
+}
+
+.showInformationBook img
+{
+    position: absolute;
+    transform: scaleX(-1);
+    margin: 5.5vh 3vw;
+    left: 0;
+    top: 0;
+    width: 3.5vh;
+    cursor: pointer;
+}
+
+.showInformationBook h1
+{
+    text-align: center;
+    margin: -2vh auto 2vh auto;
+    padding: 0 2vw;
+    border-bottom: 5px solid #d9d9d9;
+    width: max-content;
+}
+
+.showInformationBook ul 
+{
+    display: flex;
+    align-content: center;
+    margin-top: 3vh;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.showInformationBook li 
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.showInformationBook li p
+{
+    padding: .5em;
+    border: 2px solid black;
+    border-radius: .5vh;
+}
+
+.showInformationBook li label
+{
+    padding: .5em;
+    width: 16vw;
+    border-radius: .5vh;
+    background-color: #DBE3E7;
+    text-align: center;
+}

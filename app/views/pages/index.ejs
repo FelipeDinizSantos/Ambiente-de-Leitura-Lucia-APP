@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL - Página Inicial</title>
+    <link rel="stylesheet" href="/stylesheets/layouts/cleanStyle.css">
+    <link rel="stylesheet" href="/stylesheets/layouts/aboutUs.css">
+    <link rel="stylesheet" href="/stylesheets/paginaInicial/main.css">
+    <script src="/scripts/layouts/aboutUs.js" defer></script>
+    <script src="/scripts/paginaInicial/index.js" defer></script>
+</head>
+<body>
+    <%- include('../layouts/aboutUs.ejs') %>
+    <main>
+        <img src="/assets/logo.svg" id="logo">
+        <p><img src="/assets/search.svg" id="submitBtn"><input type="text" placeholder="Busque pelo título de um livro" id="inputSearch"></p>
+    </main>
+</body>
+</html>

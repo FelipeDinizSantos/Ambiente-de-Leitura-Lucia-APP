@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALL - Resultado da Pesquisa</title>
+    <link rel="stylesheet" href="/stylesheets/layouts/cleanStyle.css">
+    <link rel="stylesheet" href="/stylesheets/layouts/aboutUs.css">
+    <link rel="stylesheet" href="/stylesheets/booksList/main.css">
+    <script src="/scripts/paginaInicial/index.js" defer></script>
+    <script src="/scripts/layouts/aboutUs.js" defer></script>
+    <script src="/scripts/bookList/index.js" defer></script>
+</head>
+<body>
+    <%- include('../layouts/aboutUs.ejs') %>
+    <header> 
+        <img src="/assets/logo.svg"> 
+    </header>
+    <main>
+        <p><img src="/assets/search.svg" id="submitBtn"><input type="text" placeholder="Busque pelo título de um livro" id="inputSearch" value="<%= search %>"></p>
+        <div class="bookList">
+            <ul class="list">
+                <% data.books.forEach(book => { %>
+                    <li class="book" aria-label="<%= book.id %>"> 
+                        <% if(book.isRented){ %>
+                            <span class="available situation">Disponivel</span>
+                        <% } else { %>
+                            <span class="rented situation">Não disponivel</span>
+                        <% } %>
+                        | <%= book.title %> 
+                        <img src="/assets/playButton.svg" class="open"> 
+                    </li>
+                <% }) %>
+            </ul>
+        </div>
+        <div class="showInformationBook">
+            <img src="/assets/playButton.svg" id="close"> 
+            <h1>Informações</h1>
+            <ul>
+                <li class="title"><label>Titulo:</label><p></p></li>
+                <li class="author"><label>Autor:</label><p></p></li>
+                <li class="category"><label>Gênero:</label><p></p></li>
+                <li class="publisher"><label>Editora:</label><p></p></li>
+                <li class="ageRange"><label>Faixa Etária:</label><p></p></li>
+                <li class="publicationDate"><label>Data de Publicação:</label><p></p></li>
+                <li class="isRented"><label>Situação:</label><p></p></li>
+            </ul>
+        </div>
+    </main>
+</body>
+</html>
