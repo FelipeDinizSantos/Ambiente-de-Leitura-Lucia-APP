@@ -1,3 +1,11 @@
+body
+{
+    background-image: url('/assets/backgroundBooklist.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 header img
 {
     width: 21vw;
@@ -21,6 +29,7 @@ main p
 
 main p img
 {
+    width: 2vw;
     position: absolute;
     margin-left: 1vw;
     cursor: pointer;
@@ -30,6 +39,8 @@ main p input
 {
     border-radius: 1vw;
     width: 60vw;
+    font-size: 2.5vh;
+    height: 7vh;
     padding: 2vh 2vw 2vh 4vw;
 }
 
@@ -38,7 +49,7 @@ main p input
     margin-left: 5vh;
     margin-top: 2vh;
     border-radius: 3vh;
-    border: 3px solid black;
+    border: .5vh  solid black;
     width: 60vw;
     height: 65vh;
     overflow-y: auto;
@@ -48,7 +59,8 @@ main p input
 {
     display: flex;
     padding: 1vw;
-    border-bottom: 5px solid #d9d9d9;
+    font-size: 2.5vh;
+    border-bottom: .5vh solid #d9d9d9;
     border-radius: .5vh;
     align-items: center;
     gap: .7vw;
@@ -85,7 +97,7 @@ main p input
     transform: translate(-50%, -50%);
     flex-direction: column;
     width: 80vw;
-    height: fit-content;
+    height: 83vh;
     background-color: #F6F8F5;
     padding: 5vh;
     border-radius: 3vh;
@@ -115,6 +127,7 @@ main p input
     text-align: center;
     margin: -2vh auto 2vh auto;
     padding: 0 2vw;
+    font-size: 4.5vh;
     border-bottom: 5px solid #d9d9d9;
     width: max-content;
 }
@@ -125,12 +138,13 @@ main p input
     align-content: center;
     margin-top: 3vh;
     flex-direction: column;
-    gap: 1em;
+    gap: 2vh;
 }
 
 .showInformationBook li 
 {
     display: flex;
+    font-size: 2.5vh;
     flex-direction: row;
 }
 

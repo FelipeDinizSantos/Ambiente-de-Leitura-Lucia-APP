@@ -1,3 +1,11 @@
+body
+{
+    background-image: url('/assets/backgroundInicialPage.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
 main
 {
     display: flex;
@@ -11,6 +19,7 @@ main
 
 main #logo
 {
+    width: 30vw;
     margin-top: -2vh;
 }
 
@@ -23,6 +32,7 @@ main p
 
 main p img
 {
+    width: 2vw;
     position: absolute;
     margin-left: 1vw;
     cursor: pointer;
@@ -32,5 +42,12 @@ main p input
 {
     border-radius: 1vw;
     width: 40vw;
+    font-size: 2.5vh;
+    height: 7vh;
     padding: 2vh 2vw 2vh 4vw;
+}
+
+main p input::placeholder
+{
+    font-size: 2.5vh;
 }
