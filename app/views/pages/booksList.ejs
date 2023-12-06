@@ -20,7 +20,7 @@
         <p><img src="/assets/search.svg" id="submitBtn"><input type="text" placeholder="Busque pelo título de um livro" id="inputSearch" value="<%= search %>"></p>
         <div class="bookList">
             <ul class="list">
-                <% data.books.forEach(book => { %>
+                <% data.forEach(book => { %>
                     <li class="book" aria-label="<%= book.id %>"> 
                         <% if(book.isRented){ %>
                             <span class="available situation">Disponivel</span>

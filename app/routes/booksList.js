@@ -7,14 +7,14 @@ router.get('/', async(req, res)=>
 {
     try 
     {
-        const query = req.query.search;
+        const query = req.query.search ? req.query.search.toString() : '';
 
-        if(query)
+        if (query.trim() !== '') 
         {
             const result = await getBooks(query); 
-            if(result.books === false)
+            if(result === false)
             {
-                res.render('pages/notFound', {search: query})
+                res.render('pages/notFound', {search: query, errorMessage: 'Nenhum livro encontrado!'})
             }
             res.render('pages/booksList', {data:result, search: query});
         }
@@ -25,7 +25,7 @@ router.get('/', async(req, res)=>
     } 
     catch (error) 
     {
-        res.status(404).json({erro: error.message});
+        res.status(500).json({erro: error.message});
     }
 })
 

@@ -10,6 +10,10 @@ logo.addEventListener('click', ()=>
 
 btnClose.addEventListener('click', ()=>
 {
+    document.querySelectorAll('.showInformationBook ul li').forEach(li=>
+        {
+            li.innerHTML = '';
+        })
     container.classList.remove('show')
 })
 

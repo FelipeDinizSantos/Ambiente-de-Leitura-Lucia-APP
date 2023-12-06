@@ -20,7 +20,7 @@
     <main>
         <p><img src="/assets/search.svg" id="submitBtn"><input type="text" placeholder="Busque pelo título de um livro" id="inputSearch" value="<%= search %>"></p>
         <div class="bookList">
-            <h1 class="notFound">Nenhum livro encontrado no acervo online.</h1>
+            <h1 class="notFound"><%= errorMessage %></h1>
         </div>
         <div class="showInformationBook">
             <img src="/assets/playButton.svg" id="close"> 
