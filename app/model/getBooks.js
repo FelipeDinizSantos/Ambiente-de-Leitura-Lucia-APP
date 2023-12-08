@@ -4,7 +4,7 @@ async function getBooks(query)
 {
     try 
     {
-        const response = await axios.get('http://localhost:3010/books/findBook', 
+        const response = await axios.get('https://api-ambiente-de-leitura-lucia.onrender.com/books/findBook', 
         {
             params: 
             {

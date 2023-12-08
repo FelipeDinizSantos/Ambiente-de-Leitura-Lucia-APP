@@ -10,9 +10,9 @@ logo.addEventListener('click', ()=>
 
 btnClose.addEventListener('click', ()=>
 {
-    document.querySelectorAll('.showInformationBook ul li').forEach(li=>
+    document.querySelectorAll('.showInformationBook ul li p').forEach(p=>
         {
-            li.innerHTML = '';
+            p.innerText = '';
         })
     container.classList.remove('show')
 })
@@ -23,16 +23,16 @@ btnOpen.forEach(btn=>
     {
         container.classList.add('show');
         const id = event.target.parentNode.getAttribute('aria-label');
-        fetch('http://localhost:3010/books/findBook?search=' + id)
+        fetch('https://api-ambiente-de-leitura-lucia.onrender.com/books/findBook?search=' + id)
             .then(response => response.json())
             .then(result => 
                 {
                     const {title, author, category, publisher, ageRange, publicationDate, isRented} = result.books[0];
-                    document.querySelector('li.title p').innerHTML=title;
-                    document.querySelector('li.author p').innerHTML = author;
-                    document.querySelector('li.category p').innerHTML = category;
-                    document.querySelector('li.publisher p ').innerHTML = publisher;
-                    document.querySelector('li.ageRange p').innerHTML = ageRange;
+                    document.querySelector('li.title p').innerText=title;
+                    document.querySelector('li.author p').innerText = author;
+                    document.querySelector('li.category p').innerText = category;
+                    document.querySelector('li.publisher p ').innerText = publisher;
+                    document.querySelector('li.ageRange p').innerText = ageRange;
 
                     const date = new Date(publicationDate);
                     const day = date.getDate().toString().padStart(2, '0');
@@ -40,17 +40,17 @@ btnOpen.forEach(btn=>
                     const year = date.getFullYear();
                     const formattedDate = `${day}/${month}/${year}`;
                     
-                    document.querySelector('li.publicationDate p').innerHTML = formattedDate;
+                    document.querySelector('li.publicationDate p').innerText = formattedDate;
                     switch(isRented)
                     {
                         case true:
-                            document.querySelector('li.isRented p').innerHTML = 'Disponivel';
+                            document.querySelector('li.isRented p').innerText = 'Disponivel';
                             break;
                         case false:
-                            document.querySelector('li.isRented p').innerHTML = 'Indisponivel';
+                            document.querySelector('li.isRented p').innerText = 'Indisponivel';
                             break;
                         default:
-                            document.querySelector('li.isRented p').innerHTML = 'Disponivel';
+                            document.querySelector('li.isRented p').innerText = 'Disponivel';
                     }
                 })
             .catch(error => console.log('Erro:', error));
