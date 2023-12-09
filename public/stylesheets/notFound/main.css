@@ -3,7 +3,7 @@ body
     background-image: url('/assets/backgroundBooklist.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 .bookList

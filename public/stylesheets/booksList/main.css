@@ -3,12 +3,12 @@ body
     background-image: url('/assets/backgroundBooklist.svg');
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
 }
 
 header img
 {
-    width: 21vw;
+    width: 14em;
     margin: 5vh;
     cursor: pointer;
 }
@@ -19,63 +19,91 @@ main
     flex-direction: column;
 }
 
-main p 
+@media screen and (max-width: 800px) 
+{
+    main
+    {
+        justify-content: center;
+    }
+}
+
+main p:first-child
 {
     position: relative;
     display: flex;
+    margin-left: 2.2em;
     align-items: center;
-    margin-left: 5vh;
 }
 
-main p img
+main p img#submitBtn
 {
-    width: 2vw;
+    width: 1.5em;
     position: absolute;
-    margin-left: 1vw;
+    margin-left: .8em;
     cursor: pointer;
 }
 
 main p input
 {
-    border-radius: 1vw;
-    width: 60vw;
+    margin: 0;
+    border-radius: 2vh;
+    width: 50%;
     font-size: 2.5vh;
     height: 7vh;
-    padding: 2vh 2vw 2vh 4vw;
+    padding: .7em .7em .7em 2.6em;
+}
+
+main p:first-child
+{
+    margin-bottom: 3.5vh;
 }
 
 .bookList
 {
     margin-left: 5vh;
-    margin-top: 2vh;
+    margin-bottom: 5em;
     border-radius: 3vh;
     border: .5vh  solid black;
-    width: 60vw;
-    height: 65vh;
+    width: 90%;
+    height: 26em;
     overflow-y: auto;
 }
 
 .bookList ul li
 {
+    position: relative;
     display: flex;
-    padding: 1vw;
+    padding: 1em 2em 1em .5em;
+    gap: 1em;
     font-size: 2.5vh;
     border-bottom: .5vh solid #d9d9d9;
     border-radius: .5vh;
     align-items: center;
-    gap: .7vw;
 }
 
-.bookList ul li img
+.bookList ul li p
 {
-    width: 2vh;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 0;
+    overflow-y: auto;
+}
+
+.bookList ul li img.open
+{
+    position: absolute;
+    right: 0;
+    margin-right: 1em;
+    width: .8em;
     cursor: pointer;
 }
 
 .situation
 {
-    padding: .5vw;
-    border-radius: .5vw;
+    text-align: center;
+    width: 8em;
+    padding: .3em;
+    border-radius: .3em;
 }
 
 .available
@@ -85,17 +113,19 @@ main p input
 
 .rented
 {
-    background-color: #fa5151;
+    background-color: #ff5a5a;
 }
 
 .showInformationBook
 {
     position: absolute;
     display: none;
+    overflow-x: auto;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     flex-direction: column;
+    justify-content: center;
     width: 80vw;
     height: 83vh;
     background-color: #F6F8F5;
@@ -135,8 +165,10 @@ main p input
 .showInformationBook ul 
 {
     display: flex;
+    width: 100%;
     align-content: center;
     margin-top: 3vh;
+    justify-content: center;
     flex-direction: column;
     gap: 2vh;
 }
@@ -144,6 +176,7 @@ main p input
 .showInformationBook li 
 {
     display: flex;
+    gap: 1.5em;
     font-size: 2.5vh;
     flex-direction: row;
 }
@@ -153,12 +186,20 @@ main p input
     padding: .5em;
     border: 2px solid black;
     border-radius: .5vh;
+    display: flex;
+    height: 3em;
+    width: 80%;
+    flex-wrap: nowrap;
+    overflow-y: auto;
 }
 
 .showInformationBook li label
 {
-    padding: .5em;
-    width: 16vw;
+    display: flex;
+    width: 10em;
+    height: 3em;
+    justify-content: center;
+    align-items: center;
     border-radius: .5vh;
     background-color: #DBE3E7;
     text-align: center;

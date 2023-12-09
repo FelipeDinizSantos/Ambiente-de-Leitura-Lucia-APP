@@ -17,7 +17,10 @@
         <img src="/assets/logo.svg"> 
     </header>
     <main>
-        <p><img src="/assets/search.svg" id="submitBtn"><input type="text" placeholder="Busque pelo título de um livro" id="inputSearch" value="<%= search %>"></p>
+        <p>
+            <img src="/assets/search.svg" id="submitBtn">
+            <input type="text" placeholder="Busque pelo título de um livro" id="inputSearch" value="<%= search %>">
+        </p>
         <div class="bookList">
             <ul class="list">
                 <% data.forEach(book => { %>
@@ -27,7 +30,7 @@
                         <% } else { %>
                             <span class="rented situation">Não disponivel</span>
                         <% } %>
-                        | <%= book.title %> 
+                        <p><%= book.title %></p> 
                         <img src="/assets/playButton.svg" class="open"> 
                     </li>
                 <% }) %>

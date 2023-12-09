@@ -4,7 +4,7 @@
     display: flex;
     right: 0;
     top: 0;
-    margin: 2vw;
+    margin: 1em;
 }
 
 .content
@@ -12,15 +12,21 @@
     display: none;
     flex-direction: column;
     gap: 1em;
-    width: 18vw;
-    height: 50vh;
-    font-size: 2.5vh;
+    width: 16em;
+    height: 18em;
+    font-size: 1em;
     text-align: justify;
     justify-content: center;
     align-items: center;
     padding: 1.5em;
+    background-image: url('/assets/backgroundBooklist.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    box-shadow: -1px 5px 5px 1px #0000002a;
     border: 2px solid black;
-    margin: 8vh 0 0 auto;
+    margin: 8.8vh 0 0 auto;
+    z-index: 1000;
 }
 
 .show
@@ -35,13 +41,13 @@
     align-items: center;
     border: 3px solid black;
     padding: 1.6vh 2vh;
-    width: 5vw;
-    height: 9.2vh;
-    border-radius: 1.3vw;
+    width: 4em;
+    height: 3.7em;
+    border-radius: .8em;
     cursor: pointer;
 }
 
 .box img
 {
-    width: 2vw;
+    width: 1.8em;
 }
