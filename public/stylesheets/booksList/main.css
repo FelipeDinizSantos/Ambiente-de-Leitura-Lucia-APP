@@ -31,7 +31,8 @@ main p:first-child
 {
     position: relative;
     display: flex;
-    margin-left: 2.2em;
+    margin-left: 4.8vw;
+    width: 100%;
     align-items: center;
 }
 
@@ -48,7 +49,7 @@ main p input
     margin: 0;
     border-radius: 2vh;
     width: 50%;
-    font-size: 2.5vh;
+    font-size: 1em;
     height: 7vh;
     padding: .7em .7em .7em 2.6em;
 }
@@ -60,8 +61,7 @@ main p:first-child
 
 .bookList
 {
-    margin-left: 5vh;
-    margin-bottom: 5em;
+    margin: 0 auto 5em auto;
     border-radius: 3vh;
     border: .5vh  solid black;
     width: 90%;
@@ -75,7 +75,7 @@ main p:first-child
     display: flex;
     padding: 1em 2em 1em .5em;
     gap: 1em;
-    font-size: 2.5vh;
+    font-size: 1em;
     border-bottom: .5vh solid #d9d9d9;
     border-radius: .5vh;
     align-items: center;
@@ -145,7 +145,7 @@ main p:first-child
 {
     position: absolute;
     transform: scaleX(-1);
-    margin: 5.5vh 3vw;
+    margin: 4.2vh 3vw;
     left: 0;
     top: 0;
     width: 3.5vh;
@@ -155,7 +155,11 @@ main p:first-child
 .showInformationBook h1
 {
     text-align: center;
-    margin: -2vh auto 2vh auto;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    margin: 2vh auto 2vh auto;
     padding: 0 2vw;
     font-size: 4.5vh;
     border-bottom: 5px solid #d9d9d9;
@@ -167,7 +171,7 @@ main p:first-child
     display: flex;
     width: 100%;
     align-content: center;
-    margin-top: 3vh;
+    margin-top: 4.5vh;
     justify-content: center;
     flex-direction: column;
     gap: 2vh;
@@ -177,7 +181,7 @@ main p:first-child
 {
     display: flex;
     gap: 1.5em;
-    font-size: 2.5vh;
+    font-size: 14px;
     flex-direction: row;
 }
 
