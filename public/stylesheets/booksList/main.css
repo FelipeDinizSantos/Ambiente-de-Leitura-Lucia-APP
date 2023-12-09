@@ -127,9 +127,9 @@ main p:first-child
     flex-direction: column;
     justify-content: center;
     width: 80vw;
-    height: 83vh;
+    height: 79vh;
     background-color: #F6F8F5;
-    padding: 5vh;
+    padding: 5vh 1.7vw 1vh 1.7vw;
     border-radius: 3vh;
     border: 3px solid black;
     z-index: 10;
@@ -148,7 +148,7 @@ main p:first-child
     margin: 4.2vh 3vw;
     left: 0;
     top: 0;
-    width: 3.5vh;
+    width: 1em;
     cursor: pointer;
 }
 
@@ -159,9 +159,8 @@ main p:first-child
     top: 0;
     left: 50%;
     transform: translate(-50%);
-    margin: 2vh auto 2vh auto;
-    padding: 0 2vw;
-    font-size: 4.5vh;
+    margin: 2vh auto;
+    font-size: 2em;
     border-bottom: 5px solid #d9d9d9;
     width: max-content;
 }
@@ -180,7 +179,7 @@ main p:first-child
 .showInformationBook li 
 {
     display: flex;
-    gap: 1.5em;
+    gap: 1em;
     font-size: 14px;
     flex-direction: row;
 }
