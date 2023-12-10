@@ -44,10 +44,10 @@ btnOpen.forEach(btn=>
                     switch(isRented)
                     {
                         case true:
-                            document.querySelector('li.isRented p').innerText = 'Disponivel';
+                            document.querySelector('li.isRented p').innerText = 'Indisponivel';
                             break;
                         case false:
-                            document.querySelector('li.isRented p').innerText = 'Indisponivel';
+                            document.querySelector('li.isRented p').innerText = 'Disponivel';
                             break;
                         default:
                             document.querySelector('li.isRented p').innerText = 'Disponivel';
