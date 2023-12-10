@@ -1,7 +1,7 @@
 body
 {
     background-image: url('/assets/backgroundBooklist.svg');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center;
     background-size: cover;
 }
@@ -19,20 +19,11 @@ main
     flex-direction: column;
 }
 
-@media screen and (max-width: 800px) 
-{
-    main
-    {
-        justify-content: center;
-    }
-}
-
 main p:first-child
 {
     position: relative;
     display: flex;
     margin-left: 4.8vw;
-    width: 100%;
     align-items: center;
 }
 
@@ -54,6 +45,14 @@ main p input
     padding: .7em .7em .7em 2.6em;
 }
 
+@media screen and (max-width: 800px)
+{
+    main p input
+    {
+        width: 70%;
+    }    
+}
+
 main p:first-child
 {
     margin-bottom: 3.5vh;
@@ -61,12 +60,11 @@ main p:first-child
 
 .bookList
 {
-    margin: 0 auto 5em auto;
     border-radius: 3vh;
     border: .5vh  solid black;
     width: 90%;
     height: 26em;
-    overflow-y: auto;
+    margin-left: 4.8vw;
 }
 
 .bookList ul li
@@ -126,14 +124,24 @@ main p:first-child
     transform: translate(-50%, -50%);
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     width: 80vw;
-    height: 79vh;
+    height: 33em;
     background-color: #F6F8F5;
-    padding: 5vh 1.7vw 1vh 1.7vw;
+    padding: 5vh 0vw 1vh 4vw;
     border-radius: 3vh;
     border: 3px solid black;
     z-index: 10;
     box-shadow: 0px 0px 6px 3px #0000002c;
+}
+
+@media screen and (max-width: 1200px)
+{
+    .showInformationBook
+    {
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
 }
 
 .showInformationBook.show
@@ -145,7 +153,8 @@ main p:first-child
 {
     position: absolute;
     transform: scaleX(-1);
-    margin: 4.2vh 3vw;
+    margin-top: 5vh;
+    margin-left: 3vw;
     left: 0;
     top: 0;
     width: 1em;
