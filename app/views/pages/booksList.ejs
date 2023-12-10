@@ -26,9 +26,9 @@
                 <% data.forEach(book => { %>
                     <li class="book" aria-label="<%= book.id %>"> 
                         <% if(book.isRented){ %>
-                            <span class="available situation">Disponivel</span>
+                            <span class="rented situation">Indisponivel</span>
                         <% } else { %>
-                            <span class="rented situation">Não disponivel</span>
+                            <span class="available situation">Disponivel</span>
                         <% } %>
                         <p><%= book.title %></p> 
                         <img src="/assets/playButton.svg" class="open"> 

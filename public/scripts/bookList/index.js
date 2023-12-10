@@ -40,6 +40,8 @@ btnOpen.forEach(btn=>
                     const year = date.getFullYear();
                     const formattedDate = `${day}/${month}/${year}`;
                     
+                    console.log(isRented);
+
                     document.querySelector('li.publicationDate p').innerText = formattedDate;
                     switch(isRented)
                     {
