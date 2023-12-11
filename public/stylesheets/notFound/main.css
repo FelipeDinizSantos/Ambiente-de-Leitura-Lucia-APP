@@ -1,7 +1,7 @@
 body
 {
     background-image: url('/assets/backgroundBooklist.svg');
-    background-repeat: no-repeat;
+    background-repeat: repeat-y;
     background-position: center;
     background-size: cover;
 }
