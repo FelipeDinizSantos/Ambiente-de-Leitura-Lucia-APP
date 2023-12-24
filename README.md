@@ -32,6 +32,7 @@ A aplicação web possui integração com a aplicação desktop administrada pel
 5. Abra um Pull Request.
 
 ## Estado Atual do Projeto: Entregue
-O projeto foi entregue para a escola, ficando a critério da mesma a escolha da utilização e implementação na biblioteca, tendo que lidar com a hospedagem do sistema com auxilio da nossa equipe!
+
+O projeto foi entregue à escola, e agora cabe à instituição decidir sobre a utilização e implementação na biblioteca. A escola será responsável pela hospedagem do sistema, contando com o auxílio da nossa equipe para esse processo.
 
 Para mais informações, consulte a documentação: [DOCUMENTAÇÃO](https://drive.google.com/drive/folders/1DxZTdcw6DDnBS3thdouUKrSPJgGQlOjR?usp=sharing)
