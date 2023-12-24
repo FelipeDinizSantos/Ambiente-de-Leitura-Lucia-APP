@@ -1,6 +1,7 @@
 # Hub de Sistema de Gerenciamento de Bibliotecas
 
-O Sistema de Gerenciamento de Bibliotecas é uma iniciativa inovadora destinada a solucionar os desafios enfrentados pela biblioteca da Escola Lúcia de Castro Bueno. Atualmente, o sistema de gerenciamento da biblioteca é manual, resultando em dificuldades na gestão eficiente do acervo, controle de empréstimos, e cobrança de devoluções. A proposta visa modernizar e simplificar esses processos, proporcionando uma solução tecnológica eficaz.
+O Sistema de Gerenciamento de Bibliotecas é uma iniciativa destinada a solucionar os desafios enfrentados pela biblioteca da Escola Lúcia de Castro Bueno. Atualmente, o sistema de gerenciamento da biblioteca é manual, resultando em dificuldades na gestão eficiente do acervo, controle de empréstimos, e cobrança de devoluções. A proposta visa modernizar e simplificar esses processos, proporcionando uma solução tecnológica eficaz.
+Esta aplicação web visa possibilitar aos alunos da escola a consulta de livros que constam no acervo da biblioteca bem como das informações e sua disponibilidade para empréstimo!
 
 ## Tecnologias Utilizadas
 
@@ -9,36 +10,17 @@ O Sistema de Gerenciamento de Bibliotecas é uma iniciativa inovadora destinada 
 
 ## Funcionalidades Principais
 
-### Controle de Acervo
+### Consulta do Livros
 
-- Cadastro e controle preciso de livros no acervo.
-- Atualização de informações, como título, dimensões, quantidade, descrição, etc.
+- Possibilita a busca por todos os livros que constam no catalogados pela bibliotecaria através da [aplicação desktop](https://github.com/FelipeDinizSantos/Ambiente-de-Leitura-Lucia-DESKTOP-APP) no acervo digital
 
-### Gestão de Empréstimos
+### Visualização das Informações e Disponibilidade dos Livros 
 
-- Registros de usuários, incluindo alunos e professores.
-- Histórico de empréstimos por leitor.
-- Notificações de datas de devolução.
+- Apresenta as informações básicas do livro como ISBN, título, autor, sinopse, ano de publicação, número de páginas etc
+- Sinaliza a disponibilidade para empréstimo do livro!
 
-### Sistema de Fila de Espera
-
-- Possibilidade de entrada na fila de espera para livros emprestados.
-
-### Explorador de Livros
-
-- Ferramenta de pesquisa para busca por livros, com filtros por tags, títulos, anos, gêneros e autores.
-
-### Perfil do Leitor
-
-- Registros individuais de usuários, incluindo histórico de livros alugados, pendentes e eventuais multas.
-
-### Agendamento de Visitas
-
-- Capacidade de agendar visitas à biblioteca.
-
-### Integração Desktop e Web
-
-- Aplicativo desktop para bibliotecárias e site para alunos e professores.
+## Integração com a Aplicação Desktop 
+A aplicação web possui integração com a aplicação desktop administrada pela bibliotecaria através da API, para mais informações consulte seu repositório: [Ambiente-de-Leitura-Lucia-API](https://github.com/FelipeDinizSantos/Ambiente-de-Leitura-Lucia-API)
 
 ## Como Contribuir
 
@@ -48,8 +30,7 @@ O Sistema de Gerenciamento de Bibliotecas é uma iniciativa inovadora destinada 
 4. Faça push para a branch: `git push origin nome-da-sua-feature`.
 5. Abra um Pull Request.
 
-## Estado Atual do Projeto: Em Desenvolvimento
+## Estado Atual do Projeto: Entregue
+O projeto foi entregue para a escola, ficando a critério da mesma a escolha da utilização e implementação na biblioteca, tendo que lidar com a hospedagem do sistema com auxilio da nossa equipe!
 
-Embora não totalmente finalizado, o projeto já apresenta avanços significativos. As fases de planejamento e desenvolvimento estão em andamento, com o design e programação sendo implementados. A contribuição é bem-vinda para aprimorar e expandir a funcionalidade do sistema.
-
-Para mais informações, consulte a documentação: [DOCUMENTAÇÃO](link_para_documentacao)
+Para mais informações, consulte a documentação: [DOCUMENTAÇÃO](https://drive.google.com/drive/folders/1DxZTdcw6DDnBS3thdouUKrSPJgGQlOjR?usp=sharing)
