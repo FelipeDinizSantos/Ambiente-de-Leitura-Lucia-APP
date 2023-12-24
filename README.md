@@ -6,7 +6,7 @@ Esta aplicação web visa possibilitar aos alunos da escola a consulta de livros
 
 ## Tecnologias Utilizadas
 
-- **Front-end:** HTML, CSS, JavaScript (Figma para design)
+- **Front-end:** HTML, CSS e NodeJS (Figma para design)
 - **Back-end:** Node.js (Linguagem), MySQL (Banco de Dados)
 
 ## Funcionalidades Principais
