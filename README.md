@@ -13,7 +13,7 @@ Esta aplicação web visa possibilitar aos alunos da escola a consulta de livros
 
 ### Consulta do Livros
 
-- Possibilita a busca por todos os livros que constam no catalogados pela bibliotecaria através da [aplicação desktop](https://github.com/FelipeDinizSantos/Ambiente-de-Leitura-Lucia-DESKTOP-APP) no acervo digital
+- Possibilita a busca por todos os livros catalogados pela bibliotecaria através da [aplicação desktop](https://github.com/FelipeDinizSantos/Ambiente-de-Leitura-Lucia-DESKTOP-APP) no acervo digital
 
 ### Visualização das Informações e Disponibilidade dos Livros 
 
